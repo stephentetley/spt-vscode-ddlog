@@ -17,10 +17,24 @@
     ],
     "repository": {
         "keywords": {
-            "patterns": [{
-                "name": "keyword.control.ddlog",
-                "match": "\\b(if|while|for|return)\\b"
-            }]
+            "patterns": [
+                {
+                    "name": "keyword.control.ddlog",
+                    "match": "\\b(if|else|for|in)\\b"
+                },
+                {
+                    "name": "keyword.typedecl.ddlog",
+                    "match": "\\b(typedef)\\b"
+                },
+                {
+                    "name": "keyword.relation.ddlog",
+                    "match": "\\b(input|output|relation)\\b"
+                },
+                {
+                    "name": "keyword.other.ddlog",
+                    "match": "\\b(extern)\\b"
+                }
+            ]
         },
         "strings": {
             "name": "string.quoted.double.ddlog",

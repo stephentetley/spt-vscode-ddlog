@@ -1,8 +1,8 @@
 # spt-vscode-ddlog
 
-A VS Code extension for differential datalog (ddlog). 
+A VS Code extension for differential datalog (ddlog).
 
-https://github.com/vmware/differential-datalog
+[differential datalog](https://github.com/vmware/differential-datalog)
 
 ## Features
 
@@ -18,4 +18,4 @@ Just started...
 
 ## Release Notes
 
-Not yet released as package.
+Not yet released as a package.
