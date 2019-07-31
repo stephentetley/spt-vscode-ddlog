@@ -13,26 +13,37 @@
         },
         {
             "include": "#comments"
+        },
+        { 
+            "include": "#constants"
         }
     ],
     "repository": {
         "keywords": {
             "patterns": [
                 {
+                    "name": "keyword.module.ddlog",
+                    "match": "\\b(import|as)\\b"
+                },
+                {
                     "name": "keyword.control.ddlog",
                     "match": "\\b(if|else|for|in)\\b"
                 },
                 {
                     "name": "keyword.typedecl.ddlog",
-                    "match": "\\b(typedef)\\b"
+                    "match": "\\b(typedef|bigint|bool|string|bit|signed)\\b"
                 },
                 {
                     "name": "keyword.relation.ddlog",
                     "match": "\\b(input|output|relation)\\b"
                 },
                 {
+                    "name": "keyword.operator.ddlog",
+                    "match": "(=|\\+\\+|\\->)"
+                },
+                {
                     "name": "keyword.other.ddlog",
-                    "match": "\\b(extern)\\b"
+                    "match": "\\b(extern|function)\\b"
                 }
             ]
         },
@@ -60,6 +71,14 @@
                 }
             ]
             
+        }, 
+        "constants": {
+            "patterns": [
+                {
+                    "name": "constant.others.ddlog",
+                    "match": "\\b(true|false)\\b"
+                }
+            ]
         }
     }
 }
