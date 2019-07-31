@@ -1,0 +1,51 @@
+{
+    "name": "differential datalog",
+    "scopeName": "source.ddlog",
+    "fileTypes": [
+        "dl"
+    ],
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.ddlog",
+                "match": "\\b(if|while|for|return)\\b"
+            }]
+        },
+        "strings": {
+            "name": "string.quoted.double.ddlog",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.ddlog",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.ddlog",
+                    "match": "//.*$"
+                },
+                {
+                    "name": "comment.block.ddlog",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                }
+            ]
+            
+        }
+    }
+}

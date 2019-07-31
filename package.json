@@ -1,0 +1,25 @@
+{
+    "name": "spt-vscode-ddlog",
+    "displayName": "spt-vscode.ddlog",
+    "description": "Syntax highlighting for Differential Datalog (DDlog)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ddlog",
+            "aliases": ["ddlog", "ddlog"],
+            "extensions": [".dl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ddlog",
+            "scopeName": "source.ddlog",
+            "path": "./syntaxes/ddlog.tmLanguage.json"
+        }]
+    }
+}
